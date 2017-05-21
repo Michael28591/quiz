@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.a1694670.michael.finalquiz.MainActivity"
+    android:orientation="vertical"
+
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:textSize="40sp"
+        android:id="@+id/play"
+        android:onClick="play"
+        android:background="#FA120E"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Questions"
+        android:textSize="40sp"
+        android:id="@+id/add"
+        android:onClick="addQues"
+        android:background="#FA120E"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Ques."
+        android:textSize="40sp"
+        android:id="@+id/edit"
+        android:onClick="editQues"
+        android:background="#FA120E"
+        android:layout_marginTop="30dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Ques."
+        android:textSize="40sp"
+        android:id="@+id/del"
+        android:onClick="delQues"
+        android:background="#FA120E"
+        android:layout_marginTop="30dp"
+        />
+
+
+</LinearLayout>

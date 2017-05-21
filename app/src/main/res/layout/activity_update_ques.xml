@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.a1694670.michael.finalquiz.UpdateQues"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question:"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:layout_marginTop="5px"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_que"
+        android:lines="2"
+        android:hint="Enter Question!"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        />
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    >
+    <TextView
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Option 1:"
+        android:textColor="#FF0000"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginLeft="35sp"
+        android:layout_marginBottom="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Option 2:"
+        android:textColor="#FF0000"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginLeft="35sp"
+        android:layout_marginBottom="20dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Choice One!"
+        android:id="@+id/edt_chA"
+        android:textAlignment="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Choice Two!"
+        android:id="@+id/edt_chB"
+        android:textAlignment="center"
+        android:layout_above="@+id/edt_chC"
+        android:textSize="20sp"
+        android:layout_marginBottom="26dp" />
+</GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3:"
+            android:textColor="#FF0000"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginLeft="35sp"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 4:"
+            android:textColor="#FF0000"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginLeft="35sp"
+            android:layout_marginBottom="20dp"
+
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Choice Three!"
+            android:id="@+id/edt_chC"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Choice Four!"
+            android:id="@+id/edt_chD"
+            android:textAlignment="center"
+            android:layout_marginBottom="21dp"
+            android:layout_above="@+id/edt_correctAns"
+            android:textSize="20sp"
+            />
+    </GridLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer:"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Correct Answer!"
+        android:id="@+id/edt_correctAns"
+        android:textAlignment="center"
+        android:layout_above="@+id/btn_add"
+        android:textSize="20sp"
+        android:layout_marginBottom="5sp"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_update"
+        android:text="Update"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FF0000"
+        android:textSize="30sp"
+        android:onClick="updateQuestion"
+        />
+
+</LinearLayout>

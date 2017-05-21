@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.a1694670.michael.finalquiz.quiz"
+    android:orientation="vertical"
+    android:layout_marginLeft="30sp"
+    android:layout_marginRight="30sp"
+
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_qque"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:text="Text 8 text text text txet etxetxtxte uabd ajdad niand"
+        android:textColor="#000000"
+        />
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_qque"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/radioGroup"
+
+
+        >
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Option A"
+        android:id="@+id/rd_chA"
+       android:textSize="25sp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <RadioButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Option B"
+        android:id="@+id/rd_chB"
+        android:textSize="25sp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option C"
+            android:id="@+id/rd_chC"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option D"
+            android:textSize="25sp"
+            android:id="@+id/rd_chD"/>
+    </RadioGroup>
+
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/n"
+    android:layout_marginTop="30dp"
+    android:id="@+id/btn_qnxt"
+    android:onClick="NextQues"
+    />
+
+
+
+</LinearLayout>
